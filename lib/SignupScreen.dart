@@ -148,6 +148,11 @@ class SignupScreen extends StatelessWidget {
                     log(ContactController.text.trim());
                     log(emailController.text.trim());
                     log(passwordcontroller.text.trim());
+
+                    UserController.clear();
+                    passwordcontroller.clear();
+                    emailController.clear();
+                    ContactController.clear();
                   },
                   text: "SignUp"),
               SizedBox(
