@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   bool ispass;
   final Icon suffixIcon;
+  final String hintText;
   TextEditingController controller = TextEditingController();
   CustomTextField(
       {super.key,
       required this.controller,
       this.ispass = false,
-      required this.suffixIcon});
+      required this.suffixIcon,
+      required this.hintText});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +20,7 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       obscureText: ispass,
       decoration: InputDecoration(
+        hintText: hintText,
         suffixIcon: suffixIcon,
         errorBorder: const OutlineInputBorder(
             borderSide: BorderSide(

@@ -16,7 +16,7 @@ class CustomButton extends StatelessWidget {
               color: Colors.green, borderRadius: BorderRadius.circular(20)),
           child: Center(
             child: Text(
-              "Forget Password?",
+              text,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20,
